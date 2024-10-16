@@ -72,6 +72,14 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Color theme */
+
+:root {
+	--main-bg-color: #f5f7fa;
+	--accent-bg-color: #f08c89;
+	--accent-bg-color-complementary: #89f4c4;
+  }
+
 /* Basic */
 
 	@-ms-viewport {
@@ -87,7 +95,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f5f7fa;
+		background: var(--main-bg-color);
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #52575c;
@@ -2095,12 +2103,14 @@ input, select, textarea {
 	#header-wrapper {
 		position: relative;
 		padding: 4em 0 2em 0;
+		/*
 		background-image: url("images/header.svg");
 		background-image: url("images/overlay.png"), url("images/header.svg"), -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
 		background-image: url("images/overlay.png"), url("images/header.svg"), -webkit-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
 		background-image: url("images/overlay.png"), url("images/header.svg"), -ms-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
 		background-image: url("images/overlay.png"), url("images/header.svg"), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-color: #f08c89;
+		*/
+		background-color: var(--accent-bg-color);
 		background-size: 100% 620%;
 		background-size: 128px 128px, 100% 620%, auto;
 		background-repeat: repeat, no-repeat, no-repeat;
@@ -2310,7 +2320,7 @@ input, select, textarea {
 		#hero .button {
 			background: #fff;
 			border-color: rgba(255, 255, 255, 0);
-			color: #f08c89;
+			color: var(--accent-bg-color);
 			font-size: 1.25em;
 		}
 
@@ -2865,10 +2875,12 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
+				/*
 				background-image: url("images/overlay.png"), url("images/navPanel.svg"), -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.25));
 				background-image: url("images/overlay.png"), url("images/navPanel.svg"), -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.25));
 				background-image: url("images/overlay.png"), url("images/navPanel.svg"), -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.25));
 				background-image: url("images/overlay.png"), url("images/navPanel.svg"), linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.25));
+				*/
 				display: block;
 				left: 0;
 				overflow-y: auto;
